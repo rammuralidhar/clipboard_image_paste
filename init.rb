@@ -11,6 +11,8 @@
 require 'redmine'
 require 'dispatcher' unless Rails::VERSION::MAJOR >= 3
 
+plugin_root = File.dirname(__FILE__)
+
 Redmine::Plugin.register :clipboard_image_paste do
   name        'Clipboard image paste'
   author      'Richard Pecl'
